@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script data-require="jquery@2.1.1" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="jqueryui@1.9.0" data-semver="1.9.0" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>jQuery Slider Example</title>
+  </head>
+
+  <body>
+    <h1>Slider</h1>
+    <form action="#">
+      <fieldset class="meter">
+        <div class="slider" id="temperature" data-begin="25" data-end="100"></div>
+        <label for="setTo0" class="checked">
+          <span>ZERO</span>
+          <input type="radio" value="25" name="[temperature]" id="temperature[1]" checked="checked"/>
+        </label>
+        <label for="setTo1">
+          <span>ONE</span>
+          <input type="radio" value="50" name="[temperature]" id="temperature[2]" />
+        </label>
+        <label for="setTo2">
+          <span>TWO</span>
+          <input type="radio" value="75" name="[temperature]" id="temperature[3]" />
+        </label>
+        <label for="setTo3">
+          <span>THREE</span>
+          <input type="radio" value="100" name="[temperature]" id="temperature[4]" />
+        </label>
+        
+        <div class="thermometer">
+          <div class="mercury"></div>
+        </div>
+       
+      </fieldset>
+    </form>
+  </body>
+
+</html>
